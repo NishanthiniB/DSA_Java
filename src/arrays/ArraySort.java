@@ -6,7 +6,7 @@ public class ArraySort {
     static void main() {
        int[] array ={5,4,3,1,2};
 //        int[] array = {1,2,3,4,5};
-       int[] result =selSort(array);
+       int[] result =insSort(array);
         System.out.println(Arrays.toString(result));
     }
 
@@ -48,4 +48,19 @@ public class ArraySort {
         }
         return array;
     }
+
+ //Insertion Sort
+
+     static int[] insSort(int[] array){
+        for(int i=0; i<array.length; i++){
+            int key = array[i];
+            int j=i-1;
+            while(j>=0 && array[j] > key){
+                array[j+1] = array[j];
+                j--;
+            }
+            array[j+1]=key;
+        }
+        return array;
+     }
 }
