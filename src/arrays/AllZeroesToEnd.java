@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class AllZeroesToEnd {
     static void main() {
-       int[] arr = {0,2,3,0,5,0};
+       int[] arr = {0,2,3,0,5,0}; //{235000}
        moveZero(arr);
         System.out.println(Arrays.toString(arr));
 
