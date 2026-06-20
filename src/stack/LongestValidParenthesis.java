@@ -2,10 +2,10 @@ package stack;
 
 import java.util.Stack;
 
-public class LongestValidParanthesis {
+public class LongestValidParenthesis {
     static void main() {
-        String paranthesis = ")()())";
-        System.out.println(longestValidParentheses(paranthesis));
+        String parenthesis = ")()())";
+        System.out.println(longestValidParentheses(parenthesis));
     }
     public static int longestValidParentheses(String s) {
 
